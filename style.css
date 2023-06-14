@@ -1,0 +1,1859 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Ubuntu:ital@1&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Varela+Round&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--bg-color);
+    color: var(--btn-color);
+    font-family: Ubuntu;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    padding-top: 6rem;
+    
+}
+
+#conf {
+  color: var(--black-color);
+}
+
+:root {
+  --bg-color: #EBF4F7;
+  --text-color: #aef4ff;
+  --trans-color: rgba(235, 244, 247, 0.8);
+  --black-color: black;
+  --big-color: #3c96a4;
+  --btn-color: #55C9EA;
+  --bag-color: #d6faff;
+  --wht-color: white;
+  --faq-color: #777;
+  --bgbg-color: #f1f1f1;
+  --bl-color: #0984e3;
+  --c-c-color: #7fd0e0;
+  --bgg-color: #f2f2f2;
+  --rnd-color: rgba(255, 255, 255, 0.24);
+}
+
+/* .dark-theme {
+  --bg-color: #111;
+  --text-color: #eee;
+  --trans-color: rgba(17, 17, 17, 0.8);
+  --black-color: #fff;
+  --big-color: #1f92a2;
+  --btn-color: #55C9EA;
+  --bag-color: #2a3742;
+  --wht-color: #000;
+  --faq-color: #ccc;
+  --bgbg-color: #1c1c1c;
+  --bl-color: #00a8ff;
+  --c-c-color: #3388a6;
+  --bgg-color: #222;
+  --rnd-color: rgba(0, 0, 0, 0.24);
+}
+
+.light-theme {
+  --bg-color: #EBF4F7;
+  --text-color: #aef4ff;
+  --trans-color: rgba(235, 244, 247, 0.8);
+  --black-color: black;
+  --big-color: #3c96a4;
+  --btn-color: #55C9EA;
+  --bag-color: #d6faff;
+  --wht-color: white;
+  --faq-color: #777;
+  --bgbg-color: #f1f1f1;
+  --bl-color: #0984e3;
+  --c-c-color: #7fd0e0;
+  --bgg-color: #f2f2f2;
+  --rnd-color: rgba(255, 255, 255, 0.24);
+} */
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: 18px;
+    background-color: var(--trans-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 999999;
+  }
+ 
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--rnd-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+  }
+.header-left {
+    flex-grow: 1;
+}
+
+.navbar {
+    position: fixed;
+    flex-shrink: 0;
+    margin-left: 63%;
+    background-color: var(--trans-color);
+    
+}
+
+.button {
+    color: var(--black-color);
+    margin: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    font-family: Open Sans, sans-serif;
+}
+
+.button:hover {
+    color: var(--big-color);
+    transform: scale(2);
+}
+
+.header.fixed {
+    position: fixed;
+}
+
+#Pavadinimas {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin-top: 0px;
+    min-height: 0px;
+    margin-bottom: 100vh;
+}
+
+#Duk {
+  transition: all 1s;
+  font-size: 24px;
+  margin-top: 0px;
+  min-height: 0px;
+  margin-bottom: 50vh;
+}
+
+#Apie {
+    transition: all 1s;
+    font-size: 24px;
+    margin-top: 0px;
+    min-height: 0px;
+    margin-bottom: 50vh;
+}
+
+#Apie p {
+    color: var(--black-color);
+    text-align: center;
+
+}
+
+button {
+    font-family: Open Sans, sans-serif;
+    letter-spacing: 6px;
+    font-weight: 999;
+    display: inline-block;
+    border: none;
+    border-radius: 0.75em;
+    background-color: var(--bg-color);
+    color: var(--btn-color);
+    font-size: 21px;
+    width: 200px; 
+    height: 90px;
+    flex: 0 0 200px;
+    right: 30px;
+    box-sizing: content-box;    
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+
+
+.center p a {
+  text-align: center;
+  
+}
+
+button:hover {
+    font-size: 24px;
+    background-color: var(--bag-color);
+    transition: all 0.3s;
+    box-shadow: 0px 0px 24px -10px rgba(0,0,0,0.89);
+    -webkit-box-shadow: 0px 0px 24px -10px rgba(0,0,0,0.89);
+    -moz-box-shadow: 0px 0px 24px -10px rgba(0,0,0,0.89);
+}
+
+
+h2 {
+    font-family: Varela Round;
+    color: var(--big-color);
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#Pagrindinis {
+    min-height: 0;
+    margin-bottom: 700px;
+    /* margin-bottom: 100vh; */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+
+}
+
+#menu-icon {
+  display: none;
+}
+
+#Tekstas {
+    margin-top: 0px;
+    width: 75%;
+}
+/* Padideja */
+/* .hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: scale(0%);
+}
+
+.show {
+    transform: scale(100%);
+    filter: blur(0);
+    opacity: 1; */
+/* } */
+
+#Apie img {
+    position: relative;
+    left: 0%;
+    top: 30%;
+    width: 40%;
+    height: 110%;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show {
+    transform: translateX(0%);
+    filter: blur(0);
+    opacity: 1;
+}
+
+footer {
+  top: 50px;
+  position: relative;
+  width: 100%;
+  background-color: var(--big-color);
+
+}
+
+#Kontaktai img {
+  width: 100%;
+  height: 200%;
+}
+
+footer p {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin-bottom: 0;
+    height: 10vh;
+    background-color: var(--big-color);
+    color: var(--wht-color);
+    z-index: 999999999;
+}
+
+#Kontaktai {
+    height: 0;
+    margin-bottom: 80vh;
+}
+
+
+  
+  
+  a.active {
+    color: var(--big-color);
+  }
+  a.active1 {
+    color: var(--big-color);
+  }
+  a.active2 {
+    color: var(--big-color);
+  }
+
+  #pagr2 {
+    top: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.Mygtukas p{
+    color: var(--black-color);
+    font-size: 17px;
+}
+
+span {
+    color: var(--big-color);
+}
+
+button i {
+    opacity: 0.7;
+}
+
+img {
+    width: 640px;
+    height: 426px;
+    display: block;
+    
+    transition: 0.3s;
+    z-index: 9999;
+    margin: 0px;
+}  
+  
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+  }
+  
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }
+
+      .faq-container {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+    
+    .faq-button {
+        text-align: left;
+        background-color: var(--bg-color);
+        border: none;
+        outline: none;
+        padding: 15px;
+        font-size: 20px;
+        margin-bottom: 0px;
+        width: 90%;
+        height: 30%;
+        border-radius: 20px;
+        transition: 0.4s;
+    }
+    
+    .faq-button:hover {
+        background-color: var(--wht-color);
+        box-shadow: 2px 2px 2px var(--btn-color);
+    }
+    
+    .faq-button:after {
+        content: '\002B';
+        color: var(--faq-color);
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .faq-content {
+        position: relative;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: var(--bgbg-color);
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        right: 5%;
+    }
+
+    .faq-content p {
+        color: var(--black-color);
+    }
+
+#preloader {
+    overflow: hidden;
+    background: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 9999
+}
+
+.spinner {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid var(--bl-color);
+    top: 50%;
+    animation: loader 2s infinite ease
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--bl-color);
+    animation: loader-inner 2s infinite ease-in
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(180deg)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+
+    75% {
+        transform: rotate(360deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%
+    }
+
+    25% {
+        height: 0%
+    }
+
+    50% {
+        height: 100%
+    }
+
+    75% {
+        height: 100%
+    }
+
+    100% {
+        height: 0%
+    }
+}
+
+.center {
+    position: fixed;
+    top: 350px;
+    left: 50%;
+    width: 50%;
+    height: 292%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+.center h1, p {
+    text-align: center;
+}
+
+#Kontaktai {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#Kontaktai h2 {
+    color: var(--big-color);
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.center h1 {
+    color: var(--big-color);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.center p {
+    color: var(--btn-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: var(--text-color);
+    font-size: 24px;
+    text-decoration: none;
+    margin: 50px;
+    transition: all 1s;
+
+}
+
+.social-icons a:hover {
+    color: var(--c-c-color);
+    transform: scale(3);
+    transition: all 1s;
+}
+
+#Apie img:hover {
+    transform: scale(1.3);
+    transition: all 0.3s;
+}
+
+/* Pirmas mygtukas */
+
+#expandedButton {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: var(--bgg-color);
+  border-radius: 10px;
+  z-index: 9999;
+  border: 2px solid var(--btn-color);
+  width: 55%;
+  max-width: 5500px;
+  height: 90%;
+  max-height: 6000px;
+  padding-bottom: 340px;
+  padding-top: 180px;
+  margin-top: 390px;
+  box-sizing: border-box;
+
+}
+
+
+
+#imgcontainer {  
+position: fixed;
+display: block;
+margin-left: 0px;
+bottom: 0px;
+border: 2px solid var(--btn-color);
+border-radius: 10px;
+margin-right: 0px;
+transition: 0.3s;
+z-index: 9999;
+width: 70%;
+height: 100%;
+object-position: center;
+overflow: hidden;
+left: 103%;
+}
+
+#expandedButton img {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+  }
+#expandedButton img:hover {
+transform: scale(1.3);
+}
+
+#expandedButton p{
+  font-size: 24px;
+  width: 80%;
+  position: fixed;
+  right: 20%;
+  bottom: 130px;
+  background-color: var(--bgg-color);
+  color: var(--black-color);
+  text-align: center;
+  top: -100%;
+}
+
+
+#expandedButton h3{
+background-color: var(--bgg-color);
+position: relative;
+top: -150px;
+color: var(--big-color);
+font-size: 30px;
+padding: 5px;
+text-align: center;
+width: 100%;
+overflow-y: auto;
+}
+
+#expandedButton #scroll-container {
+position: relative;
+bottom: 135px;
+left: 10px;
+font-size: 1em;
+text-align: center;
+width: 100%;
+
+
+height: 24em;
+overflow-y: auto;
+max-height: 600px;
+background-color: var(--bgg-color);
+overflow: hidden;
+}
+
+#expandedButton #scroll-container #scroll-text {
+  height: 109%;
+  width: 120%;
+  text-align: center;
+  background-color: var(--bgg-color);
+  
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 35s linear infinite;
+  -webkit-animation: my-animation 35s linear infinite;
+  animation: my-animation 35s linear infinite;
+
+  animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+
+/* Antras mygtukas */
+
+#expandedButton1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+  }
+
+  
+#expandedButton1 p{
+    font-size: 24px;
+    width: 100%;
+    bottom: 80px;
+    background-color: var(--bgg-color);
+    color: var(--black-color);
+    text-align: center;
+  }
+
+  
+#expandedButton1 h3{
+  background-color: var(--bgg-color);
+  position: relative;
+  top: -150px;
+  color: var(--big-color);
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  overflow-y: auto;
+}
+
+#expandedButton1 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: var(--bgg-color);
+  border-radius: 10px;
+  z-index: 9999;
+  border: 2px solid var(--btn-color);
+  width: 55%;
+  max-width: 5500px;
+  height: 90%;
+  max-height: 6000px;
+  padding-bottom: 340px;
+  padding-top: 180px;
+  margin-top: 390px;
+  box-sizing: border-box;
+}
+
+#expandedButton1 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+  align-items: center;
+  align-content: center;  
+}
+
+#expandedButton1 img:hover {
+  transform: scale(1.3);
+  }
+
+#expandedButton1 #scroll-container {
+position: relative;
+bottom: 135px;
+left: 8%;
+background-color: var(--bgg-color);
+font-size: 1em;
+padding: 5px;
+text-align: center;
+width: 80%;
+
+
+height: 18em;
+overflow-y: auto;
+max-height: 414px;
+background-color: var(--bgg-color);
+overflow: hidden;
+}
+
+#Kontaktai {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+  align-items: center;
+  align-content: center;  
+}
+
+
+/* Trečias mygtukas */
+
+#expandedButton2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: var(--bgg-color);
+  border-radius: 10px;
+  z-index: 9999;
+  border: 2px solid var(--btn-color);
+  width: 55%;
+  max-width: 5500px;
+  height: 90%;
+  max-height: 6000px;
+  padding-bottom: 340px;
+  padding-top: 180px;
+  margin-top: 390px;
+  box-sizing: border-box;
+}
+
+
+#expandedButton2 p{
+  font-size: 24px;
+  width: 80%;
+  position: fixed;
+  right: 20%;
+  bottom: 130px;
+  background-color: var(--bgg-color);
+  color: var(--black-color);
+  text-align: center;
+  top: -100%;
+}
+
+
+#expandedButton2 h3{
+  background-color: var(--bgg-color);
+  position: relative;
+  top: -150px;
+  color: var(--big-color);
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  overflow-y: auto;
+} 
+
+#expandedButton2 #scroll-container {
+position: relative;
+bottom: 135px;
+left: 10px;
+font-size: 1em;
+padding: 5px;
+text-align: center;
+width: 100%;
+
+
+height: 200em;
+overflow-y: auto;
+max-height: 414px;
+background-color: var(--bgg-color);
+overflow: hidden;
+}
+
+#undraw {
+  position: fixed;
+  display: block;
+  margin-left: 0px;
+  bottom: 0px;
+  border-radius: 10px;
+  margin-right: 0px;
+  transition: 0.3s;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  overflow: hidden;
+  top: 555%;
+  left: 0%;
+  padding-bottom: 100px;
+}
+#expandedButton2 #scroll-container #scroll-text {
+  height: 90%;
+  width: 120%;
+  text-align: center;
+  background-color: var(--bgg-color);
+  
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 35s linear infinite;
+  -webkit-animation: my-animation 35s linear infinite;
+  animation: my-animation 35s linear infinite;
+
+  animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+
+#expandedButton2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+#expandedButton2 img:hover {
+  transform: scale(1.3);
+}
+
+/* Ketvirtas mygtukas */
+
+#expandedButton3 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: var(--bgg-color);
+  border-radius: 10px;
+  z-index: 9999;
+  border: 2px solid var(--btn-color);
+  width: 55%;
+  max-width: 5500px;
+  height: 90%;
+  max-height: 6000px;
+  padding-bottom: 340px;
+  padding-top: 180px;
+  margin-top: 390px;
+  box-sizing: border-box;
+
+}
+
+#expandedButton3 p{
+  font-size: 24px;
+  width: 80%;
+  position: fixed;
+  right: 20%;
+  bottom: 130px;
+  background-color: var(--bgg-color);
+  color: var(--black-color);
+  text-align: center;
+  top: -102%;
+}
+
+
+#expandedButton3 h3{
+  background-color: var(--bgg-color);
+  position: relative;
+  top: -150px;
+  color: var(--big-color);
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  overflow-y: auto;
+}
+
+#expandedButton3 #scroll-container {
+position: relative;
+bottom: 135px;
+left: 10px;
+font-size: 1em;
+padding: 5px;
+text-align: center;
+width: 100%;
+
+
+height: 23em;
+overflow-y: auto;
+max-height: 414px;
+background-color: var(--bgg-color);
+overflow: hidden;
+
+}
+
+#expandedButton3 #scroll-container #scroll-text {
+  height: 97%;
+  width: 120%;
+  text-align: center;
+  background-color: var(--bgg-color);
+  
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 35s linear infinite;
+  -webkit-animation: my-animation 35s linear infinite;
+  animation: my-animation 35s linear infinite;
+
+  animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+
+#expandedButton3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+  #expandedButton3 img:hover {
+    transform: scale(1.3);
+  }
+
+/* Penktas mygtukas */
+
+#expandedButton4 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: var(--bgg-color);
+  border-radius: 10px;
+  z-index: 9999;
+  border: 2px solid var(--btn-color);
+  width: 55%;
+  max-width: 5500px;
+  height: 90%;
+  max-height: 6000px;
+  padding-bottom: 340px;
+  padding-top: 180px;
+  margin-top: 390px;
+  box-sizing: border-box;
+}
+
+#expandedButton4 p{
+  font-size: 24px;
+  width: 80%;
+  position: fixed;
+  right: 20%;
+  bottom: 130px;
+  background-color: var(--bgg-color);
+  color: var(--black-color);
+  text-align: center;
+  top: -100%;
+}
+
+
+#expandedButton4 h3{
+  background-color: var(--bgg-color);
+  position: relative;
+  top: -150px;
+  color: var(--big-color);
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  overflow-y: auto;
+} 
+
+
+
+#expandedButton4 #scroll-container {
+  position: relative;
+  bottom: 135px;
+  left: 1%;
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  
+  
+  height: 23em;
+  overflow-y: auto;
+  max-height: 414px;
+  background-color: var(--bgg-color);
+  overflow: hidden;
+}
+
+#expandedButton4 #scroll-container #scroll-text {
+  height: 97%;
+  width: 120%;
+  text-align: center;
+  background-color: var(--bgg-color);
+  
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 35s linear infinite;
+  -webkit-animation: my-animation 35s linear infinite;
+  animation: my-animation 35s linear infinite;
+
+  animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+
+#expandedButton4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+  #expandedButton4 img:hover {
+    transform: scale(1.3);
+  }
+
+@media screen and (max-width: 768px) {
+  #expandedButton, #expandedButton1, #expandedButton2, #expandedButton3, #expandedButton4 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+     background-color: var(--bgg-color);
+    border-radius: 10px;
+    z-index: 9999;
+    border: 2px solid var(--btn-color);
+    width: 55%;
+    max-width: 5500px;
+     height: 90%;
+    max-height: 6000px;
+    padding-top: 180px;
+    margin-top: 390px;
+    box-sizing: border-box;
+
+    margin-top: 360px;
+    padding-right:0%;
+    margin-left: auto;
+    left: 51%;
+    width: 90%;
+    padding-bottom: 180px;
+    min-width: none;
+    
+  }
+
+  #imgcontainer img {
+    position: fixed;
+  display: block;
+  margin-left: 0px;
+  bottom: 0px;
+  border: 2px solid var(--btn-color);
+  border-radius: 10px;
+  margin-right: 0px;
+  transition: 0.3s;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  overflow: hidden;
+  top: 105%;
+  left: 0%;
+  }
+
+  #expandedButton h3, #expandedButton1 h3, #expandedButton2 h3, #expandedButton3 h3, #expandedButton4 h3 {
+    width: 95%;
+  }
+
+  #expandedButton #scroll-container, #expandedButton1 #scroll-container,#expandedButton2 #scroll-container, #expandedButton3 #scroll-container,#expandedButton4 #scroll-container {
+    width: 95%;
+    height: 13em;
+  }
+
+  #expandedButton #scroll-container #scroll-text {
+    height: 242%;
+  }
+
+  #expandedButton #scroll-container {
+    height: 15em;
+  }
+
+  #expandedButton1 #scroll-container {
+    width: 90%;
+    left: 1%;
+  }
+  
+  #expandedButton1 #scroll-container #scroll-text {
+    
+    -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+
+  animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+
+  height: 100px;
+  }
+
+  #expandedButton1 #scroll-container #scroll-text p {
+    position: relative;
+    /* position: fixed; */
+    bottom: 100px;
+    /* top: 50px; */
+  }
+
+  #expandedButton2 #scroll-container #scroll-text {
+    height: 238%;
+  }
+
+  #expandedButton3 #scroll-container #scroll-text {
+    height: 225%;
+  }
+
+  #expandedButton4 #scroll-container #scroll-text {
+    height: 360%;
+  }
+
+  #expandedButton3 p {
+    top: -100%;
+  }
+
+  #imgcontainer {  
+    position: fixed;
+  display: block;
+  margin-left: 0px;
+  bottom: 0px;
+  border: 2px solid var(--btn-color);
+  border-radius: 10px;
+  margin-right: 0px;
+  transition: 0.3s;
+  z-index: 9999;
+  width: 100%;
+  height: 50%;
+  object-position: center;
+  overflow: hidden;
+  top: 105%;
+  left: 0%;
+    }
+
+  #expandedButton img:hover, #expandedButton1 img:hover, #expandedButton2 img:hover, #expandedButton3 img:hover,#expandedButton4 img:hover {
+    transform: none;
+    
+  }
+
+  button {
+    margin-bottom: 20px;
+  }
+
+  /* Hamburger menu */
+
+  .navbar {
+    display: none;
+}
+.header.fixed {
+    position: fixed;
+    height: auto;
+}
+.header.fixed .navbar {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 30%;
+    width: 100%;
+    background-color: var(--trans-color);
+    /* padding: 10px; */
+    z-index: 100;
+}
+
+.header.fixed .navbar .button {
+    display: block;
+    text-decoration: none;
+    margin: 0px;
+    transition: transform 0.3s ease;
+    font-family: Open Sans, sans-serif;
+    padding: 5px;
+}
+.header.fixed .navbar .button:hover {
+    color: var(--big-color);
+    transform: scale(1);
+}
+#menu-icon {
+    background-color: var(--rnd-color);
+    display: block;
+    position: fixed;
+    top: 1.4%;
+    right: 10%;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 101;
+}
+#text-container {
+  position: fixed;
+}
+
+#Tekstas{
+  margin: 0px;
+  width: 85%;
+} 
+
+footer p{
+  width: 100%;
+}
+footer {
+  width: 100%;
+}
+h2 {
+  width: 100%;
+}
+
+#Pagrindinis {
+  margin-bottom: 1000px;
+}
+
+.social-icons {
+  /* flex-wrap: wrap; */
+  text-align: center;  
+}
+
+.down {
+  flex-wrap:wrap;
+}
+
+#undraw {
+  top: 300%;
+}
+
+.social-icons a {
+  width: 4%;
+  height: 28%;
+  margin: 10px;
+}
+
+.faq-container {
+  width: 97%;
+}
+
+#undraw {
+  top: 494%;
+}
+
+
+#Kontaktai .centras {
+  position: fixed;
+display: block;
+margin-left: 0px;
+border-radius: 10px;
+margin-right: 0px;
+transition: 0.3s;
+z-index: 9999;
+width: 100%;
+left: 0%;
+height: 64%;
+object-position: center;
+overflow: hidden;
+
+}
+}
+
+
+
+@media screen and (max-width:720px){
+  #expandedButton, #expandedButton1, #expandedButton2, #expandedButton3, #expandedButton4 {
+    margin-top: 455px;
+  }
+  h2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 479px){
+  #expandedButton1 #scroll-container, #expandedButton2 #scroll-container, #expandedButton3 #scroll-container, #expandedButton4 #scroll-container {
+    height: 26em;
+  }
+
+  #expandedButton, #expandedButton1, #expandedButton2, #expandedButton3, #expandedButton4 {
+    margin-top: 675px;
+    width: 118%;
+    left: 61%;
+  }
+
+  footer {
+    width: 120%;
+  }
+
+  footer p {
+    position: relative;
+    right: 5%;
+  }
+  .down {
+    flex-wrap:wrap;
+  }
+
+  .social-icons {
+    /* flex-direction: column; */
+    justify-content: space-between;
+    display: flex;
+  }
+}
+
+@media screen and (max-width:1250px) {
+  .faq-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:1149px) {
+  #expandedButton, #expandedButton1, #expandedButton2, #expandedButton3, #expandedButton4 {
+    top: 64%;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .faq-container {
+    width: 90%;
+  }
+}
+
+
+.centras {
+  position: fixed;
+display: block;
+margin-left: 0px;
+border-radius: 10px;
+margin-right: 0px;
+transition: 0.3s;
+z-index: 9999;
+width: 100%;
+left: 5%;
+height: 65%;
+object-position: center;
+overflow: hidden;
+left: 0%;
+}
+
+#Duk .centras {
+  height: 15%;
+  bottom: 100%;
+  left: 0%;
+}
+
+@media screen and (max-width:700px) {
+  #expandedButton, #expandedButton1, #expandedButton2, #expandedButton3, #expandedButton4 {
+    top: 60%;
+  }
+}
+
+
+@media screen and (max-width:231px){
+  #expandedButton1 #scroll-container, #expandedButton2 #scroll-container, #expandedButton3 #scroll-container, #expandedButton4 #scroll-container {
+    height: 14em;
+  }
+}
+
+@media screen and (max-width:440px){
+  #expandedButton, #expandedButton1, #expandedButton2, #expandedButton3, #expandedButton4 {
+    width: 84%;
+    left: 51%;
+  }
+
+  #expandedButton1 #scroll-container, #expandedButton2 #scroll-container, #expandedButton3 #scroll-container, #expandedButton4 #scroll-container {
+    height: 24em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #expandedButton, #expandedButton1, #expandedButton2, #expandedButton3, #expandedButton4 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+     background-color: var(--bgg-color);
+    border-radius: 10px;
+    border: 2px solid var(--btn-color);
+    max-width: 5500px;
+    height: 95;
+    max-height: 6000px;
+    padding-top: 180px;
+    margin-top: 390px;
+    box-sizing: border-box;
+
+    margin-top: 700px;
+    padding-right:0%;
+    width: 96%;
+    padding-bottom: 180px;
+    min-width: none;
+    
+  }
+
+  #Kontaktai h2 {
+    left: 0;
+    width: 100%;
+  }
+.center {
+  width: 70%;
+}
+  #Kontaktai .centras {
+    position: fixed;
+  display: flex;
+  margin-left: 0px;
+  border-radius: 10px;
+  margin-right: 0px;
+  transition: 0.3s;
+  z-index: 9999;
+  width: 100%;
+  left: 0%;
+  height: 64%;
+  object-position: center;
+  overflow: hidden;
+  justify-content: center;
+  }
+
+  .faq-button {
+    text-align: left;
+    background-color: var(--bg-color);
+    border: none;
+    outline: none;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+  #expandedButton1, #expandedButton2, #expandedButton3, #expandedButton4 {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  h2 {
+    position: relative;
+    font-size: 28px;
+    left: 5%;
+  }
+
+  #Apie h2 {
+    left: -3%;
+  }
+
+  #imgcontainer img {
+    position: fixed;
+  display: block;
+  margin-left: 0px;
+  bottom: 0px;
+  border: 2px solid var(--btn-color);
+  border-radius: 10px;
+  margin-right: 0px;
+  transition: 0.3s;
+  z-index: 9999;
+  width: 100%;
+  height: 30%;
+  object-position: center;
+  overflow: hidden;
+  top: 105%;
+  left: 0%;
+  }
+
+  #expandedButton h3, #expandedButton1 h3, #expandedButton2 h3, #expandedButton3 h3, #expandedButton4 h3 {
+    width: 93%;
+    font-size: 24px;
+  }
+
+  #expandedButton #scroll-container, #expandedButton1 #scroll-container,#expandedButton2 #scroll-container, #expandedButton3 #scroll-container,#expandedButton4 #scroll-container {
+    width: 90%;
+    height: 29em;
+  }
+
+  #expandedButton #scroll-container #scroll-text {
+    height: 415%;
+    font-size: 18px;
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+
+    animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+  }
+
+  #expandedButton #scroll-container {
+    height: 29em;
+  }
+
+  #expandedButton1 #scroll-container {
+    width: 90%;
+    left: 1%;
+  }
+  
+  #expandedButton1 #scroll-container #scroll-text {
+    
+    -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+
+  animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+
+  height: 100px;
+  font-size: 18px;
+
+  }
+
+  #expandedButton1 #scroll-container #scroll-text p {
+    position: relative;
+    /* position: fixed; */
+    bottom: 100px;
+    /* top: 50px; */
+  }
+
+  #expandedButton2 #scroll-container #scroll-text {
+    height: 409%;
+
+    -moz-animation: my-animation 95s linear infinite;
+    -webkit-animation: my-animation 95s linear infinite;
+    animation: my-animation 95s linear infinite;
+
+    animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+  }
+
+  #expandedButton2 #scroll-container {
+    height: 17em;
+  }
+
+  #expandedButton3 #scroll-container #scroll-text {
+    height: 373%;
+
+    -moz-animation: my-animation 95s linear infinite;
+    -webkit-animation: my-animation 95s linear infinite;
+    animation: my-animation 95s linear infinite;
+
+    animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+  }
+
+  #expandedButton2 #scroll-container {
+    height: 19em;
+  }
+
+  #expandedButton4 #scroll-container #scroll-text {
+    height: 360%;
+  }
+
+  #imgcontainer {  
+    position: fixed;
+  display: block;
+  margin-left: 0px;
+  bottom: 0px;
+  border: 2px solid var(--btn-color);
+  border-radius: 10px;
+  margin-right: 0px;
+  transition: 0.3s;
+  z-index: 9999;
+  width: 100%;
+  height: 30%;
+  object-position: center;
+  overflow: hidden;
+  top: 105%;
+  left: 0%;
+    }
+
+  #expandedButton img:hover, #expandedButton1 img:hover, #expandedButton2 img:hover, #expandedButton3 img:hover,#expandedButton4 img:hover {
+    transform: none;
+    
+  }
+
+  button {
+    margin-bottom: 20px;
+  }
+
+  /* Hamburger menu */
+
+  .navbar {
+    display: none;
+}
+.header.fixed {
+    position: fixed;
+    height: auto;
+}
+.header.fixed .navbar {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -5%;
+    right: 30%;
+    width: 100%;
+    background-color: var(--trans-color);
+    /* padding: 10px; */
+    z-index: 100;
+}
+.header.fixed .navbar .button {
+    display: block;
+    text-decoration: none;
+    margin: 0px;
+    transition: transform 0.3s ease;
+    font-family: Open Sans, sans-serif;
+    padding: 5px;
+}
+.header.fixed .navbar .button:hover {
+    color: var(--big-color);
+    transform: scale(1);
+}
+#menu-icon {
+    background-color: var(--rnd-color);
+    display: block;
+    position: fixed;
+    top: 1.4%;
+    right: 10%;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 101;
+}
+#text-container {
+  position: fixed;
+}
+
+button {
+  position: relative;
+  left: 0%;
+}
+
+#pav {
+  position: relative;
+  left: 0%;
+}
+
+#Tekstas{
+  position: relative;
+  left: -2%;
+  margin: 0px;
+  width: 85%;
+} 
+
+footer p{
+  width: 100%;
+}
+footer {
+  width: 100%;
+  height: 50%;
+  z-index: 99999;
+}
+h2 {
+  width: 80%;
+  text-align: center;
+}
+
+#Pagrindinis {
+  margin-bottom: 1000px;
+}
+
+section #Pagrindinis{
+  margin-bottom: 500px;
+}
+
+#undraw {
+  top: 579%;
+}
+
+.social-icons a {
+  width: 1%;
+  height: 1%;
+}
+
+#Apie {
+  position: relative;
+  left: 0%;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#Apie img {
+  width: 100%;
+  height: 100%;
+}
+#Pagrindinis {
+  margin-bottom: 1500px;
+}
+
+#Duk {
+  position: relative;
+
+}
+
+#Duk h2 {
+  text-align: center;
+}
+
+#Kontaktai img {
+  height: 100%;
+}
+}
+
+#pagr2 div button {
+  margin: 15px;
+}
+
+
+/* Button styles */
+button {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 6px;
+  font-weight: 999;
+  display: inline-block;
+  border: none;
+  border-radius: 0.75em;
+  background-color: var(--bg-color);
+  color: var(--btn-color);
+  font-size: 21px;
+  width: 200px;
+  height: 90px;
+  flex: 0 0 200px;
+  right: 30px;
+  box-sizing: content-box;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  overflow:hidden;
+}
+
+/* Hover animation */
+.aft::before,
+.aft::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--btn-color);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.aft::before {
+  top: 0;
+  left: -100%;
+  transform-origin: right center;
+}
+
+.aft::after {
+  top: 0;
+  right: -100%;
+  transform-origin: left center;
+}
+
+.aft:hover::before {
+  transform: skew(-20deg);
+  background-color: var(--btn-color);
+}
+
+.aft:hover::after {
+  transform: skew(-20deg);
+  background-color: var(--btn-color);
+}
+
+.button-glow {
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px var(--btn-color);
+  }
+  100% {
+    box-shadow: 0 0 20px var(--btn-color);
+  }
+}

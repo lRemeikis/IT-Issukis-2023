@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mano ateitis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cursor.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div id="text-container">
+                <span class="multiple-text"></span>
+            </div>
+            <nav class="navbar">
+                <a id="virsus" class="button active" >Pagrindinis</a>
+                <a id="apie" class="button" >Apie</a>
+                <a id="duk" class="button" >DUK</a>
+                <a id="kontaktai" class="button" >Kontaktai</a>
+                <a id="pora" class="button" >Poraštė</a>
+                <a id="conf" class="button" ><span id="theme-icon"><i class="fa-solid fa-moon fa-fade" style="color: #000000;"></i></span></a>
+            </nav>
+            <div id="menu-icon" class="fa fa-bars"></div>
+        </header>
+    </div>
+    <!-- <div class="Pavadinimas">
+<h1 id="Pavadinimas">Mano ateitis su technologijomis</h1>
+</div>
+<div id="text-container">
+<span class="multiple-text"></span>
+</div> -->
+
+            <section id="Pagrindinis" class="hidden">
+    <div id="pav">
+        <h2>Mano ateitis su technologijomis</h2>
+    </div>
+    <div id="pagr2">
+        <div>
+            <button class="Mygtukas aft button-glow"onclick="toggleGlow(this)">Dabartis</button>
+        <div id="expandedButton">
+                <h3>Dabartiniai mokslai ir technologijos</h3>
+                <div id="scroll-container">
+                    <div id="scroll-text">
+                <p> Dar visai neseniai buvau tik progimnazijos mokinys, kuris tik naudojosi sukurtais produktais. Žaidžiant ar naršant Internete visada buvo labai įdomu, kaip visa tai padaryta. Labai norėjau pats kurti Internetinius puslapius, o gal net pabandyti sukurti žaidimą.  
+                    <br/><br/>
+                    Dabar esu gimnazistas. Savarankiškai stengiuosi išmokti programuoti, kad galėčiau pats pradėti kurti ir tobulinti įvairius programinius įrankius. Noriu išmokti pats sukurti Internetinius puslapius, kad ir aš galėčiau prisidėti prie informacijos sklaidos.  
+                    <br/><br/>
+                    Labai noriu, kad mokytojai ir dėstytojai daugiau naudotų technologinių naujovių perduodami mums savo žinias. Mano manymu, laikas mokykloje pradėti naudoti tokias technologijas:
+                    <br/><br/>
+                    *         Virtualūs laboratorijos eksperimentai – padeda mokiniams atlikti mokomuosius bandymus, kuriuos būtų sudėtinga atlikti tikrovėje, saugioje virtualioje aplinkoje.
+                    
+                     
+                    <br/><br/>
+                    *         Augmented Reality (AR) ir Virtual Reality (VR) technologijos – šie inovatyvūs įrankiai leidžia mokiniams patirti aplinką, veiklas bei objektus tiesiog mokykloje.
+                    
+                     
+                    <br/><br/>
+                    *         Programavimo mokymas – įdiegiant kompiuterių programavimo pamokas, mokiniams suteikiama galimybė išmokti kurti programinę įrangą ir suprasti, kaip veikia technologijos.<br/><br/>
+                    *        Personalizuotas mokymasis naudojant AI – AI pagrindu parengtos mokymosi programos gali padėti individualizuoti kiekvieno mokinio mokymosi strategijas. Naudojant invidualiai parengtas užduotis ir medžiagą pagal jų poreikius ir pažangą.
+                    <br/><br/>
+                     Gal ir aš galiu padėti mokytojams tai padaryti !?
+                </p>
+                </div>
+            </div>
+            <!-- <div id="paveik">
+                <img src="" alt="programming image" id="image">
+            </div> -->
+            <div id="imgcontainer">
+            <img src="" alt="programming image" id="image">
+            </div>
+            </div>
+        </div>
+        <div>
+            <button class="Mygtukas1 aft"onclick="toggleGlow(this)">Netolima ateitis</button>
+            <div id="expandedButton1">
+                <h3>Mano būsimos profesijos ir pasirinktos<br/> technologijos</h3>
+        <div id="scroll-container">
+            <div id="scroll-text">
+                <p>Technologijos nuolat tobulėja ir keičiasi, tiesiogiai keičia  mūsų gyvenimo būdą. Žvelgdami į ateitį, matome daug naujų technologinių pokyčių, kurie turės didelę įtaką mūsų kasdienybei ir netgi  visuomenės vystymuisi. <br/><br/>Galvoju, kad baigęs mokyklą rinksiuosi programuotojo, o gal IT saugumo specialisto kelią,  o gal didelių duomenų (Big Data) analitiko kelią? Taip pat galvoju, kad dar atsiras naujos specialybės, susijusios su dirbtiniu intelektu (AI), daiktų internetu (IoT), išmaniaisiais namais, o gal net centrinių bankų skaitmeninės valiutos (CBDC) tobulinimu ir  panaudojimu kasdieniniame gyvenime bei verslo ir mokslo aplinkoje.
+                </p>
+            </div>
+        </div>
+                <div id="imgcontainer">
+                    <img src="" alt="future image" id="futureimage">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="Mygtukas2 aft"onclick="toggleGlow(this)">Naujovės</button>
+            <div id="expandedButton2">
+                <h3>Technologinės naujovės ir jų įtaka mano ateities planams</h3>
+                <div id="scroll-container">
+                    <div id="scroll-text">
+                <p>Galvoju, kad technologijų naujovės turės reikšmingą įtaką mano ateities planams įvairiais aspektais. Štai keletas pavyzdžių, kaip technologijos gali paveikti mano gyvenimą ir karjerą:
+                    <br/><br/>
+ 
+
+                    Darbo rinka. Automatizacija, dirbtinis intelektas (AI) ir robotizacija gali pakeisti darbo rinką ir įgūdžių poreikį. Vietoj senųjų specialybių, ateityje gali prireikti naujų, susijusių su IT, programavimu arba duomenų analize.
+                    <br/><br/>
+                     
+                    
+                    Sveikata. Naujos technologijos sparčiai keičia sveikatos sektorių. Telemedicina, 3D spausdinimas ir AI gali keisti sveikatos priežiūros paslaugas ir jų kainas iš esmės, o tai suteikia galimybę naujiems karjeros posūkiams sveikatos pramonėje.
+                    <br/><br/>
+                     
+                    
+                    Bendravimo priemonės. Socialinės medijos, virtualios realybės technologijos ir mobilieji telefonai toliau keičia mūsų bendravimo įpročius. Jie verčia mus prisitaikyti prie naujos informacinės erdvės ir naujos gyvenimo tėkmės.
+                    
+                    <br/><br/>
+                    Kaip matome iš pavyzdžių, viena iš didžiausių ateities technologijų dabartyje yra dirbtinis intelektas (AI). Manau, kad jis iš esmės gali pakeisti mokslą, verslą, mediciną ir kitas sritis. Galvoju, kad dirbtinis intelektas padidins įvairių sričių  efektyvumą bei kokybę. Tačiau kartu gali iškilti daug teisinių ir etikos iššūkių. Tokių kaip intelektinė nuosavybė bei teisinė atsakomybė už AI padarytus veiksmus bei priimtus sprendimus. Todėl galvoju, kad kol baigsiu mokyklą, visi šie iššūkiai gali pakoreguoti mano planus, nes atsiras poreikis naujų sričių specialistams.</p>
+                    </div>
+                </div>
+                <div id="imgcontainer">
+                    <img src="" alt="AI image" id="newimage">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="Mygtukas3 aft"onclick="toggleGlow(this)">Neigiamas poveikis</button>
+            <div id="expandedButton3">
+                <h3>Neigiamas technologijos poveikis ekonominei ir <br/>socialinei aplinkai</h3>
+                <div id="scroll-container">
+                    <div id="scroll-text">
+                <p>Technologijos turi didelę įtaką ekonominei ir socialinei aplinkai. Labai nesmagu pripažinti, kad tarp visų teigiamų aspektų  yra ir daug neigiamų.
+                    <br/><br/>
+                    *    Darbo vietų praradimas  Automatizacija ir robotizacija kelia grėsmę žmonių darbo vietoms daugelyje sektorių, nes kompiuteriai, robotai ir kitos technologijos yra efektyvesni už žmogaus darbą.
+                    <br/><br/>
+                    *     Socialinė atskirtis  Technologijų prieinamumas yra nevienodas įvairiems visuomenės sluoksniams. Todėl gali atsirasti "skaitmeninė atskirtis", kai tam tikros visuomenės grupės neturi galimybės naudotis moderniomis technologijomis.
+                    <br/><br/>
+                    *    Privatumo stoka Technologijų, tokių kaip socialinės medijos ar internetiniai slapukai, naudojimas gali smarkiai pažeisti asmens privatumą ir saugumą.
+                    <br/><br/>
+                    *    Psichologinės ir socialinės problemos  Kompiuteriniai žaidimai, socialinės medijos ir interneto priklausomybė gali sukelti psichologines ir socialines problemas, tokias kaip uždarumas, nepasitikėjimas, depresija ar šeimų konfliktai. <br/> <br/>Vis dėlto svarbu pabrėžti, kad technologijų plėtrą reikia palaikyti, tačiau visada siekti švietimo bei aiškaus reglamentavimo.  Tai padėtų mažinti neigiamą technologijų poveikį ir užtikrintų teigiamą ekonomikos bei visuomenės vystymąsi.</p>
+                    </div>
+                    <div id="imgcontainer">
+                        <img src="" alt="negative technology image" id="negimage">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <button class="Mygtukas4 aft"onclick="toggleGlow(this)">Teigiamas poveikis</button>
+            <div id="expandedButton4">
+                <h3>Teigiamas technologijos poveikis ekonominei ir<br/> socialinei aplinkai</h3>
+                <div id="scroll-container">
+                    <div id="scroll-text">
+                <p>Technologijų plėtra, be abejo, yra vienas iš pagrindinių veiksnių, kuris veikia ekonominį ir socialinį vystymąsi visame pasaulyje. Teigiamas technologijų poveikis ekonominei ir socialinei aplinkai yra daugialypis:
+
+ 
+                    <br/> <br/>
+                    *    Produktyvumo didėjimas.  Naujos technologijos leidžia efektyviau naudoti išteklius, mažina gamybos laiką ir didina produktyvumą. Dėl didesnio produktyvumo įmonės gali gaminti daugiau prekių ir paslaugų su mažesnėmis išlaidomis, o tai prisideda prie ekonominio augimo ir naujų darbo vietų kūrimo.
+                    
+                     
+                    <br/> <br/>
+                    *    Naujų pramonės šakų kūrimasis.  Naujausios technologijos yra varomoji jėga naujų pramonės šakų atsiradimui, tokias kaip informacinių ir ryšių technologijų (IRT), skaitmeninės ekonomikos, biotechnologijų ir atsinaujinančių energijos šaltinių sritys.
+                    
+                     
+                    <br/> <br/>
+                    *    Darbo vietų kūrimas. Nors technologijų plėtra gali turėti neigiamo poveikio tam tikroms darbo vietoms, vis dėlto visuotinis efektas yra teigiamas. Technologijų plėtra sukuria naujas specializuotas darbo vietas inžinieriams, programuotojams, dizaineriams ir kitoms profesijoms, kurios tiesiogiai susijusios su technologijų vystymu ir jų taikymu.
+                    
+                     
+                    <br/> <br/>
+                    *    Susisiekimo ir informacijos sklaidos spartėjimas.  Moderniosios technologijos palengvina informacijos mainus, leidžia greičiau ir efektyviau vykdyti verslo ir komunikacijos procesus. Tai savo ruožtu padeda gerinti prekybos ir investicijų sąlygas ir skatina ekonomiką.
+                    
+                     
+                    <br/> <br/>
+                    *    Socialinė integracija: technologijos padeda sumažinti socialines įtampas ir padidina socialinės gerovės lygį, pavyzdžiui, skaitmeninės technologijos padeda pasiekti ir integravo nuošaliuose regionuose gyvenančius žmones, palengvina neįgaliųjų dalyvavimą visuomenėje.
+                    
+                     
+                    <br/> <br/>
+                    *   Švietimas ir mokymasis.  Technologijų plėtra leidžia patobulinti švietimą ir mokymąsi per internetą, atvirosios švietimo priemonės ir MOOC (Massive Open Online Courses) kursus, suteikia galimybes žmogui nuolat mokytis ir tobulėti visą gyvenimą.
+                    
+                     
+                    <br/> <br/>
+                    *   Aplinkosaugos problemų mažinimas: technologiniai sprendimai taip pat padeda sumažinti ekologinį poveikį, efektyviau naudotis ištekliais, didinti energijos vartojimo efektyvumą ir rasti ekologiškesnių alternatyvų neekologiškoms technologijoms.</p>
+                </div>
+                </div>
+                <div id="imgcontainer">
+                    <img src="" alt="positive technology image" id="posimage">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </section>
+    <section id="Apie" class="hidden">
+        <h2>Apie</h2>
+        <p id="Tekstas">Projektas skritas nacionalinio IT iššūkio antrajam etapui.
+            <br/><br/>
+            Nacionalinis IT iššūkis – pirmasis projektas, skirtas visos Lietuvos mokiniams gerinti žinias IT srityje ir įsikvėpti ateičiai su technologijomis.
+            <br/><br/>
+            Patekęs į antrąjį Nacionalinio IT iššūkio etapą, gavau išskirtinę progą pasitobulinti savarankiškai įgytas HTML, CSS ir Javascript žinias, sukurti savo pirmąjį Internetinį WEB puslapį ir pateikti jį kompetentingos komisijos vertinimui. </p>
+            <img src="./images/it.png" alt="IT iššūkis">
+    </section>
+    <section id="Duk" class="hidden">
+        <div class="centras">
+        <h2>DUK</h2>
+    </div>
+        <div class="faq-container">
+            <button class="faq-button">Kas aš esu?</button>
+            <div class="faq-content">
+                <p>Esu Laurynas, mokausi Vilniaus Žirmūnų gimnazijos pirmoje klasėje.</p>
+            </div>
+            <button class="faq-button">Iš kur moku programuoti?</button>
+            <div class="faq-content">
+                <p>Šiek tiek mokinausi savarankiškai, o daugiausia padėjo IT iššūkio pamokos.</p>
+            </div>
+            <button class="faq-button">Kodėl sukūriau šį Internetinį puslapį?</button>
+            <div class="faq-content">
+                <p>Nes patekau į IT iššūkio antrąjį etapą ir tai buvo konkursinė užduotis.</p>
+            </div>
+            <button class="faq-button">Kokias programavimo kalbas naudojau?</button>
+            <div class="faq-content">
+                <p>Naudojau HTML, CSS ir Javascript.</p>
+            </div>
+            <button class="faq-button">Kiek Internetinių puslapių esu sukūręs?</button>
+            <div class="faq-content">
+                <p>Šis yra pirmas puslapis.</p>
+            </div>
+            <button class="faq-button">Iš kur sužinojau apie IT iššūkį?</button>
+            <div class="faq-content">
+                <p>Radau informaciją Internete.</p>
+            </div>
+        </div>
+    </section>
+    <section id="Kontaktai" class="hidden">
+        <div class="centras">
+        <h2>Kontaktai</h2>
+    </div>
+    <div class="center">
+        <h1>Laurynas Remeikis</h1><br/>
+        <p>Mokinys • Programuotojas </p>
+        <p>Telefonas: +370 654 03303</p>
+        <p>Email: <div><a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXMmmtqzFTFgrvrTnGrpstnttHFXvQQZGwhcFKZfFDcPkcbFsQWhCfrtbBdzMbzgWzCpm"></div>laurynasr007@gmail.com</a></p>
+        <div class="social-icons">
+        <a class="down" href="https://twitter.com/Remeika12?t=E__wJ8-QhPXYamug8JxLDg&s=09"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/Remeiq/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/lRemeikis"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/_remeika_/?igshid=ZDc4ODBmNjlmNQ%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+        <a class="down" href="https://discord.gg/Nxy7h3dPnm"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    </div>
+    <div id="undraw">
+        <img src="./images/undraw_profile_re_4a55.svg" alt="Contacts">
+        </div>
+    </section>
+    <footer id="Poraštė">
+        <p>© 2023 Laurynas Remeikis. Visos teisės saugomos. v1.01
+    </footer>
+
+    <div id='preloader'>
+        <div class='spinner'>
+            <span class='loader'><span class='loader-inner'></span></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script async src="cursor.js"></script>
+    <script src="https://kit.fontawesome.com/6e90c9683d.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- https://www.behance.net/gallery/156086353/Computers-and-Networks-Website-Desing-Webflow -->
